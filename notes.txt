@@ -1,0 +1,47 @@
+12.1.4
+_______________________________________________________________________________
+
+sqlite3 db/election.db
+
+Because the terminal is currently located at the root directory of the project,
+we must add the db/ prefix to place the new file in the db folder. Without this
+instruction, the file would be generated in the root directory.
+
+Prompt in terminal will change.
+
+Verify connection with: .database.
+
+Absolute path will display in command prompt.
+
+End connection with .quit.
+
+NOTE: All internal commands will begin with a period.
+_______________________________________________________________________________
+
+SQL
+
+SQL keywords are in all caps. This SQL convention helps differentiate the SQL 
+commands from identifiers like database, table, and column names. The use of 
+all caps is optional, but identifiers are case-sensitive, just like in 
+JavaScript. first_name and First_Name would reference two different columns.
+
+The columns must not contain spaces and are normally lowercase.
+
+The data types follow the column names. VARCHAR is followed by parentheses and 
+a number, whereas BOOLEAN and INTEGER aren't. VARCHAR stands for a variable 
+character. The number following VARCHAR represents the number of characters 
+this column's values can have.
+
+In SQL when storing a value we explicitly declare the data type and storage 
+parameters. If anyone tries to store data outside those parameters (e.g., a 
+string in an INTEGER column), the database will not allow it.
+
+SQLite and some other relational databases store Boolean values as 0 for 
+false and 1 for true. Some databases have convenient constants named FALSE 
+and TRUE set to 0 and 1, respectively. From version 3.23 onward, SQLite also 
+offers those convenient constants.
+
+VARCHAR values must be surrounded by quotes because they are strings.
+Also note that every SQL statement is terminated by a semicolon.
+_______________________________________________________________________________
+

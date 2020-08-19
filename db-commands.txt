@@ -1,0 +1,42 @@
+.database verifies the connection.
+
+.quit ends the connection.
+
+sqlite3 will reopen the connection if .quit has been used.
+
+.open will open the databae, example: .open db/election.db
+
+.schema displays all successfully executed CREATE statements in the db.
+
+.tables will show all tables.
+
+
+SQL
+_______________________________________________________________________________
+
+
+INSERT INTO tablename (first text, second text, INT, etc...)
+VALUES ('first text' , 'second text', INT) -< this will add data to the table.
+
+SELECT * FROM (table) will pull all information from the table.
+
+SELECT first_text, second_text FROM table; would pull JUST requested colums from table
+
+SELECT first_text, second_text
+FROM table
+WHERE indentifier = 1; would pull JUST those 2 columns IF the 3 had matching values.
+
+UPDATE table
+SET selection = 1
+WHERE id = 3; would edit the selected information to 1, in this example, to the unique id 3
+
+.headers on
+.mode column
+
+These ^ will make the view in terminal more legible.
+
+https://sqlite.org/cli.html
+
+sqlite3 db/election.db < db/schema.sql <<<<- TERMINAL, NOT SQL CLI
+
+
