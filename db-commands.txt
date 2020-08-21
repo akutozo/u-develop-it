@@ -30,6 +30,9 @@ UPDATE table
 SET selection = 1
 WHERE id = 3; would edit the selected information to 1, in this example, to the unique id 3
 
+DELETE FROM candidates
+WHERE first_name = "Montague";
+
 .headers on
 .mode column
 
