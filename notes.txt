@@ -58,3 +58,13 @@ responses from the query in two variables: the err, which is the error
 response, and rows, which is the database query response. If there are no 
 errors in the SQL query, the err value is null. This method is the key 
 component that allows SQL commands to be written in a Node.js application.
+
+_______________________________________________________________________________
+
+A word of warning, though: The SQLite command line does not enable foreign key
+ constraints by default. You'll need to turn this on with the statement PRAGMA
+  foreign_keys = ON every time you restart SQLite. 
+
+PRAGMA foreign_keys = ON;
+
+_______________________________________________________________________________
